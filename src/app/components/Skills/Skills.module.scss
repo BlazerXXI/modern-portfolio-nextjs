@@ -1,0 +1,43 @@
+@import '@/app/scss/variables.scss';
+@import '@/app/scss/mixins.scss';
+
+.root {
+}
+
+.container {
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 56px;
+}
+
+.skill {
+  width: 70px;
+  height: 50px;
+  border-radius: 9999px;
+  background-color: $bg-color;
+  color: $primary;
+  border: $primary 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 16% 0;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    scale: 1.1;
+    color: $lightColor;
+    background-color: $primary;
+  }
+  &:active {
+    scale: 0.9;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.root {
+	position: relative;
+	z-index: 2;
+	padding: 0 20px;
+	box-shadow: 0 0 10px 0 $primary;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		opacity: 0.8;
+	}
+	border-radius: 0 0 40px 40px;
+	animation: headerMotion 20s linear infinite;
+	@keyframes headerMotion {
+		0% {
+			border-radius: 0 0 40px 40px;
+		}
+		50% {
+			border-radius: 0 0 160px 160px;
+		}
+		100% {
+			border-radius: 0 0 40px 40px;
+		}
+	}
+}
+.container {
+}
