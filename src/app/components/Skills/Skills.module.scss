@@ -30,6 +30,10 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
 
+  @include mobile {
+    flex: 33.333% 0;
+  }
+
   &:hover {
     opacity: 0.8;
     scale: 1.1;
