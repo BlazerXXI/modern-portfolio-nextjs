@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import styles from "./HeroDevices.module.scss";
 
 interface HeroDevicesProps {
 	img: string;
@@ -12,7 +13,7 @@ const HeroDevices = (props: HeroDevicesProps) => {
 	const { img, alt, width, height } = props;
 
 	return (
-		<div>
+		<div className={styles.root}>
 			<Image src={img} alt={alt} width={width} height={height} />
 		</div>
 	);
